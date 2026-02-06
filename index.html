@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AM Agropecuária</title>
+  <link rel="icon" href="logo.png">
   <meta name="description" content="AM Agropecuária - Medicamentos veterinários, rações e atendimento especializado." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -12,7 +13,8 @@
     html{scroll-behavior:smooth}
     body{background:#fff;color:var(--texto);line-height:1.6}
     header{background:var(--verde);color:#fff;padding:18px 40px;display:flex;justify-content:space-between;align-items:center}
-    header h1{font-size:22px}
+    header h1{font-size:22px;display:flex;align-items:center;gap:10px}
+    .logo{height:42px;width:auto}
     nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:500}
     nav a:hover{opacity:.8}
     .hero{background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1600&auto=format&fit=crop');background-size:cover;background-position:center;color:#fff;text-align:center;padding:120px 20px}
@@ -30,7 +32,7 @@
 </head>
 <body>
   <header>
-    <h1>AM Agropecuária</h1>
+    <h1><img src="logo.png" alt="Logo AM Agropecuária" class="logo"> <span>AM Agropecuária</span></h1>
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#produtos">Produtos</a>
