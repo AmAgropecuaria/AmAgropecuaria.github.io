@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AM Agropecuária</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="AM Agropecuária - Medicamentos veterinários, rações e atendimento especializado." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--verde:#2e6b3f;--verde-escuro:#1e4d2b;--bege:#f5f4ef;--texto:#222}
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif}
+    body{background:#fff;color:var(--texto);line-height:1.6}
+    header{background:var(--verde);color:#fff;padding:18px 40px;display:flex;justify-content:space-between;align-items:center}
+    header h1{font-size:22px}
+    nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:500}
+    nav a:hover{opacity:.8}
+    .hero{background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1600&auto=format&fit=crop');background-size:cover;background-position:center;color:#fff;text-align:center;padding:120px 20px}
+    .hero h2{font-size:42px;margin-bottom:12px}
+    .hero p{font-size:18px;max-width:700px;margin:auto}
+    section{padding:60px 20px;max-width:1100px;margin:auto}
+    .titulo{font-size:28px;margin-bottom:25px;color:var(--verde)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+    .card{background:var(--bege);padding:22px;border-radius:14px}
+    .card h3{margin-bottom:8px;color:var(--verde-escuro)}
+    .contato{background:var(--verde);color:#fff;border-radius:16px;padding:35px;text-align:center}
+    .contato a{display:inline-block;margin-top:15px;background:#fff;color:var(--verde);padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600}
+    footer{text-align:center;padding:30px;font-size:14px;background:#f1f1f1;margin-top:40px}
+  </style>
 </head>
 <body>
+  <header>
+    <h1>AM Agropecuária</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-<header class="topo">
-  <h1>AM Agropecuária - LUPIONÓPOLIS</h1>
-  <p>Soluções completas para você produtor rural</p>
-  <a href="https://wa.me/55SEUNUMERO" class="btn-whats">WhatsApp</a>
-</header>
+  <section class="hero">
+    <h2>Tudo para o cuidado do seu animal</h2>
+    <p>Medicamentos veterinários, rações e atendimento profissional para pequenos e grandes animais.</p>
+  </section>
 
-<nav class="menu">
-  <a href="#produtos">Produtos</a>
-  <a href="#sobre">Sobre</a>
-  <a href="#contato">Contato</a>
-</nav>
+  <section id="sobre">
+    <h2 class="titulo">Sobre a loja</h2>
+    <p>A AM Agropecuária é especializada no atendimento ao produtor rural e tutores de animais domésticos, oferecendo produtos veterinários e orientação profissional. Trabalhamos com responsabilidade e compromisso para garantir qualidade e confiança aos nossos clientes.</p>
+  </section>
 
-<section id="produtos">
-  <h2>Nossos Produtos</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Rações</h3>
-      <p>Para bovinos, suínos, aves e pets.</p>
+  <section id="produtos">
+    <h2 class="titulo">Principais produtos</h2>
+    <div class="grid">
+      <div class="card"><h3>Medicamentos veterinários</h3><p>Produtos para prevenção e tratamento de diversas espécies.</p></div>
+      <div class="card"><h3>Rações</h3><p>Opções para cães, gatos, bovinos, bezerros e vacas.</p></div>
+      <div class="card"><h3>Suplementos</h3><p>Itens essenciais para manejo e criação.</p></div>
+      <div class="card"><h3>Acessórios</h3><p>Materiais utilizados no dia a dia da propriedade.</p></div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Medicamentos Veterinários</h3>
-      <p>Linhas completas e confiáveis.</p>
+  <section id="servicos">
+    <h2 class="titulo">Serviços</h2>
+    <div class="grid">
+      <div class="card"><h3>Atendimento veterinário</h3><p>Orientação profissional para cuidados com a saúde animal.</p></div>
+      <div class="card"><h3>Indicação de produtos</h3><p>Auxílio na escolha correta conforme a necessidade.</p></div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Ferramentas e Insumos</h3>
-      <p>Equipamentos para o dia a dia no campo.</p>
+  <section id="contato">
+    <div class="contato">
+      <h2>Entre em contato</h2>
+      <p>Fale conosco pelo WhatsApp para informações sobre produtos e disponibilidade.</p>
+      <a href="https://wa.me/5500000000000" target="_blank">Chamar no WhatsApp</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="sobre">
-  <h2>Sobre a AM Agropecuária</h2>
-  <p>
-   A AM Agropecuária é uma empresa dedicada a oferecer soluções completas para seus animais, atendendo produtores rurais, criadores e tutores de animais de companhia com profissionalismo, confiança e responsabilidade técnica.
+  <footer>
+    © <span id="ano"></span> AM Agropecuária - Todos os direitos reservados
+  </footer>
 
-Contamos com acompanhamento de médico veterinário, garantindo orientação qualificada na escolha de medicamentos, manejo sanitário, prevenção de doenças e bem-estar animal. Nosso compromisso é proporcionar segurança ao cliente e resultados efetivos no cuidado com cada espécie atendida.
-
-Disponibilizamos uma linha completa de medicamentos veterinários, produtos terapêuticos e preventivos, sempre priorizando qualidade e procedência. Trabalhamos com marcas reconhecidas no mercado, assegurando eficácia nos tratamentos e na manutenção da saúde dos animais.
-
-Também oferecemos rações para:
-
-cães e gatos
-
-bovinos de corte e leite
-
-bezerros e vacas em diferentes fases
-
-Mais do que comercializar produtos, a AM Agropecuária busca orientar e auxiliar o cliente no dia a dia, contribuindo para o bom manejo e cuidado responsável dos animais.
-
-AM Agropecuária — confiança e orientação para quem vive do campo e para quem cuida de quem faz parte da família.
-  </p>
-</section>
-
-<section id="contato">
-  <h2>Contato</h2>
-  <p>📍 Endereço da loja - Rua Sebastiana Alves da Cruz - 687</p>
-  <p>📞 (43) 99617-9673</p>
-  <p>🕒 Segunda a Sexta — 08h às 11:30h e 13h às 18h</p>
-  <p> E aos Sábados - 08h às 12h </p>
-</section>
-
-<footer>
-  <p>© 2026 AM Agropecuária</p>
-</footer>
-
+  <script>
+    document.getElementById('ano').textContent=new Date().getFullYear();
+  </script>
 </body>
 </html>
