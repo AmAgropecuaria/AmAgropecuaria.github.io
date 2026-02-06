@@ -9,87 +9,6 @@
   <style>
     :root{--verde:#2e6b3f;--verde-escuro:#1e4d2b;--bege:#f5f4ef;--texto:#222}
     *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif}
-    body{background:#fff;color:var(--texto);line-height:1.6}
-    header{background:var(--verde);color:#fff;padding:18px 40px;display:flex;justify-content:space-between;align-items:center}
-    header h1{font-size:22px}
-    nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:500}
-    nav a:hover{opacity:.8}
-    .hero{background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1600&auto=format&fit=crop');background-size:cover;background-position:center;color:#fff;text-align:center;padding:120px 20px}
-    .hero h2{font-size:42px;margin-bottom:12px}
-    .hero p{font-size:18px;max-width:700px;margin:auto}
-    section{padding:60px 20px;max-width:1100px;margin:auto}
-    .titulo{font-size:28px;margin-bottom:25px;color:var(--verde)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-    .card{background:var(--bege);padding:22px;border-radius:14px}
-    .card h3{margin-bottom:8px;color:var(--verde-escuro)}
-    .contato{background:var(--verde);color:#fff;border-radius:16px;padding:35px;text-align:center}
-    .contato a{display:inline-block;margin-top:15px;background:#fff;color:var(--verde);padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600}
-    footer{text-align:center;padding:30px;font-size:14px;background:#f1f1f1;margin-top:40px}
-  </style>
-</head>
-<body>
-  <header>
-    <h1>AM Agropecuária</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#produtos">Produtos</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Tudo para o cuidado do seu animal</h2>
-    <p>Medicamentos veterinários, rações e atendimento profissional para pequenos e grandes animais.</p>
-  </section>
-
-  <section id="sobre">
-    <h2 class="titulo">Sobre a loja</h2>
-    <p>A AM Agropecuária atende Lupionópolis - PR e região, oferecendo medicamentos veterinários, rações e orientação profissional para pequenos e grandes animais. Nosso compromisso é fornecer produtos confiáveis e atendimento próximo ao produtor rural e aos tutores de animais.</p>
-  </section>
-
-  <section id="produtos">
-    <h2 class="titulo">Principais produtos</h2>
-    <div class="grid">
-      <div class="card"><h3>Medicamentos veterinários</h3><p>Produtos para prevenção e tratamento de diversas espécies.</p></div>
-      <div class="card"><h3>Rações</h3><p>Opções para cães, gatos, bovinos, bezerros e vacas.</p></div>
-      <div class="card"><h3>Suplementos</h3><p>Itens essenciais para manejo e criação.</p></div>
-      <div class="card"><h3>Acessórios</h3><p>Materiais utilizados no dia a dia da propriedade.</p></div>
-    </div>
-  </section>
-
-  <section id="servicos">
-    <h2 class="titulo">Serviços</h2>
-    <div class="grid">
-      <div class="card"><h3>Atendimento veterinário</h3><p>Orientação profissional para cuidados com a saúde animal.</p></div>
-      <div class="card"><h3>Indicação de produtos</h3><p>Auxílio na escolha correta conforme a necessidade.</p></div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <div class="contato">
-      <h2>Entre em contato</h2>
-      <p><strong>Telefone / WhatsApp:</strong> (43) 99617-9673</p>
-      <p><strong>Localização:</strong> Lupionópolis - PR</p>
-      <p><strong>Horário:</strong><br>
-      Segunda à Sexta: 08h às 11:30h e 13h às 18h<br>
-      Sábado: 08h às 12h</p>
-      <a href="https://wa.me/5543996179673" target="_blank">Chamar no WhatsApp</a>
-      <br><br>
-      <a href="https://www.instagram.com/agropecuaria.am" target="_blank">Ver Instagram</a>
-      <br><br>
-      <iframe src="https://maps.google.com/maps?q=Lupion%C3%B3polis%20PR&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
-    </div><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AM Agropecuária</title>
-  <meta name="description" content="AM Agropecuária - Medicamentos veterinários, rações e atendimento especializado." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--verde:#2e6b3f;--verde-escuro:#1e4d2b;--bege:#f5f4ef;--texto:#222}
-    *{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif}
     html{scroll-behavior:smooth}
     body{background:#fff;color:var(--texto);line-height:1.6}
     header{background:var(--verde);color:#fff;padding:18px 40px;display:flex;justify-content:space-between;align-items:center}
@@ -189,17 +108,5 @@
     }
     .whatsapp-fixo:hover{transform:scale(1.05)}
   </style>
-</body>
-</html>
-
-  </section>
-
-  <footer>
-    © <span id="ano"></span> AM Agropecuária - Todos os direitos reservados
-  </footer>
-
-  <script>
-    document.getElementById('ano').textContent=new Date().getFullYear();
-  </script>
 </body>
 </html>
